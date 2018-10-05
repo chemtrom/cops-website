@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <!--
@@ -74,68 +74,27 @@
 					
 					<div class="clearfix content">
 						<div class="content_title"><h2>Latest Blog Post</h2></div>
-						
+						{% for post in list_of_post %}
 						<div class="clearfix single_content">
 							<div class="clearfix post_date floatleft">
 								<div class="date">
-									<h3>27</h3>
-									<p>January</p>
+									<h3>{{ post.0 }}</h3><!--date-->
+									<p>{{ post.1 }}</p><!-- month -->
 								</div>
 							</div>
 							<div class="clearfix post_detail">
-								<h2><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></h2>
+								<h2><a href="">{{ post.2 }}</a></h2><!-- title -->
 								<div class="clearfix post-meta">
-									<p><span><i class="fa fa-user"></i> Admin</span> <span><i class="fa fa-clock-o"></i> 20 Jan 2014</span> <span><i class="fa fa-comment"></i></span> <span><i class="fa fa-folder"></i> Category</span></p>
+									<p><span><i class="fa fa-user"></i>{{ post.3 }}<!-- name--></span> <span><i class="fa fa-clock-o"></i>{{ post.0 }} {{ post.1 }}</span> <span><i class="fa fa-comment"></i></span> <span><i class="fa fa-folder"></i> {{ post.4 }}<!-- category--></span></p>
 								</div>
 								<div class="clearfix post_excerpt">
 									<img src="images/thumb.png" alt=""/>
-									<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a 
-									ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class 
-									aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos </p>
+									<p>{{ post.5 }}<!-- data --></p>
 								</div>
 								<a href="single.html">Continue Reading</a>
 							</div>
 						</div>
-						
-						<div class="clearfix single_content">
-							<div class="clearfix post_date floatleft">
-								<h3>27</h3>
-								<p>January</p>
-							</div>
-							<div class="clearfix post_detail">
-								<h2><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></h2>
-								<div class="clearfix post-meta">
-									<p><span>Admin</span> <span>20 Jan 2014</span><span>Category</span></p>
-								</div>
-								<div class="clearfix post_excerpt">
-									<img src="images/thumb.png" alt=""/>
-									<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a 
-									ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class 
-									aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos </p>
-								</div>
-								<a href="single.html">Continue Reading</a>
-							</div>
-						</div>
-						
-						<div class="clearfix single_content">
-							<div class="clearfix post_date floatleft">
-								<h3>27</h3>
-								<p>January</p>
-							</div>
-							<div class="clearfix post_detail">
-								<h2><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></h2>
-								<div class="clearfix post-meta">
-									<p><span>Admin</span> <span>20 Jan 2014</span><span>Category</span></p>
-								</div>
-								<div class="clearfix post_excerpt">
-									<img src="images/thumb.png" alt=""/>
-									<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a 
-									ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class 
-									aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos </p>
-								</div>
-								<a href="single.html">Continue Reading</a>
-							</div>
-						</div>						
+						{% endfor %}						
 					</div>
 					
 					<div class="pagination">
@@ -152,19 +111,6 @@
 					</div>
 				</div>
 				<div class="clearfix sidebar_container floatright">
-					<div class="clearfix sidebar">
-						<div class="clearfix single_sidebar">
-							<div class="popular_post">
-								<div class="sidebar_title"><h2>Most Popular</h2></div>
-								<ul>
-									<li><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></li>
-									<li><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></li>
-									<li><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></li>
-									<li><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></li>
-									<li><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></li>
-								</ul>
-							</div>
-							</div>
 						<div class="clearfix single_sidebar category_items">
 							<h2>Categories</h2>
 							<ul>

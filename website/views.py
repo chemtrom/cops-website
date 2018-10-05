@@ -12,8 +12,7 @@ class HomePageView(TemplateView):
 
 
 class TeamPageView(TemplateView):
-    '''
-    TODO Add integrate this into team page
+    # TODO Add integrate this into team page
 
     # Read the csv file coordinators.csv
     with open("website/coordinators.csv", "r") as f:
@@ -27,7 +26,6 @@ class TeamPageView(TemplateView):
         context = super().get_context_data(**kwargs)
         context['objects'] = self.rest
         return context
-    '''
     template_name = "team.html"
 
 

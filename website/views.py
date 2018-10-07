@@ -31,7 +31,7 @@ class TimelinePageView(TemplateView):
     template_name = "timeline.html"
 
 
-class PostsPageView(TemplateView):
+class BlogsPageView(TemplateView):
     # Read the files in `posts` folder
     files = [f for f in listdir('posts')]
 
@@ -71,7 +71,7 @@ class PostsPageView(TemplateView):
         temp.append(content1)
         posts.append(temp)
 
-    template_name = "posts.html"
+    template_name = "blogs.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -132,7 +132,7 @@ class ProjectsPageView(TemplateView):
 
         projects.append(temp)
 
-    template_name = "projects.htm"
+    template_name = "projects.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

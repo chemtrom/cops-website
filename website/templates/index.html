@@ -1,51 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>COPS, IIT(BHU)</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+{% extends "base.html" %}
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
-          rel="stylesheet">
-
-    <!-- Bootstrap CSS File -->
-    <link href="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/bootstrap.min.css?alt=media&token=13c69f8e-23ae-4fad-8287-861f0d61a984" rel="stylesheet">
-
-    <!-- Libraries CSS Files -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
-
-    <!-- Main Stylesheet File -->
-    <link href="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/style.css?alt=media&token=10a5dcc2-3307-4df3-b452-c7a8dc404d25" rel="stylesheet">
-
-</head>
-<body style="font-family: Roboto">
-<!--==========================
-Header
-============================-->
-<header id="header">
-    <div class="container">
-
-        <div id="logo" class="pull-left">
-            <a href="#hero"><img src="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/logo.png?alt=media&token=8f365979-3c9e-4dc7-8ec1-a70e9d01eb4b" alt="" title=""/></a>
-
-        </div>
-
-        <nav id="nav-menu-container">
-            <ul class="nav-menu">
-                <li><a href="/" class="btn waves-effect waves-brown waves-ripple">Home</a></li>
-                <li><a href="/projects" class="btn waves-effect waves-brown waves-ripple">Projects</a></li>
-                <li><a href="/posts" class="btn waves-effect waves-brown waves-ripple">Blogs</a></li>
-                <li><a href="/team" class="btn waves-effect waves-brown waves-ripple">Team</a></li>
-                <li><a href="/timeline" class="btn waves-effect waves-brown waves-ripple">Timeline</a></li>
-                <li><a href="/#contact" class="btn waves-effect waves-brown waves-ripple">Contact</a></li>
-            </ul>
-        </nav><!-- #nav-menu-container -->
-    </div>
-</header><!-- #header -->
+{% block content %}
+<!-- Main Stylesheet File -->
+<link rel="stylesheet" property="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/style.css?alt=media&token=10a5dcc2-3307-4df3-b452-c7a8dc404d25">
 
 <!--==========================
   Hero Section
@@ -450,45 +407,8 @@ Header
 
 </main>
 
-<!--==========================
-  Footer
-============================-->
-<footer id="footer">
-    <div class="footer-top">
-        <div class="container">
-
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="copyright">
-            &copy; Copyright <strong>COPS</strong>. All Rights Reserved
-        </div>
-
-        <div class="credits">
-
-        </div>
-    </div>
-    <div class="social-links text-center">
-        <a href="https://www.facebook.com/cops.iitbhu/" target="_blank" class="facebook"><i class="fa fa-facebook"
-                                                                                            title="Follow us on Facebook"></i></a>
-        <a href="https://github.com/COPS-IITBHU/" target="_blank" class="github"><i class="fa fa-github"
-                                                                                    title="follow us on GitHub"></i></a>
-        <a href="https://groups.google.com/forum/#!forum/cops-summer-bootcamp" target="_blank" class="google"><i
-                class="fa fa-google" title="Join our Google Group"></i></a>
-        <a href="https://cops-iitbhu.slack.com/" target="_blank" class="slack"><i class="fa fa-slack"
-                                                                                  title="Join our workspace on Slack"></i></a>
-        <a href="http://codeforces.com/group/kBMG2k5WAX/blog" target="_blank" class="code"><i class="fa fa-code"
-                                                                                              title="Join our group on Codeforces"></i></a>
-    </div>
-</footer><!-- #footer -->
-
-<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
 <!-- JavaScript Libraries -->
-<script src="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/jquery.min.js?alt=media&token=ab5c31e7-0920-40cc-9274-8ea2922947f8"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
-<script src="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/bootstrap.bundle.min.js?alt=media&token=4e419bbe-683e-4e02-b87f-c50822033849"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
@@ -501,5 +421,4 @@ Header
 <script src="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/main.js?alt=media&token=8940401d-3a6d-4b0b-a418-bfa7640cd587"></script>
 
 
-</body>
-</html>
+{% endblock %}

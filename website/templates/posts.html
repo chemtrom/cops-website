@@ -1,74 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+{% extends "base.html" %}
 
-<!--
----- Clean html template by http://WpFreeware.com
----- This is the main file (index.html).
----- You are allowed to change anything you like. Find out more Awesome Templates @ wpfreeware.com
----- Read License-readme.txt file to learn more.
--->	
+{% block content %}
 
-	<head>
-		<title>Home Blog</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!--Oswald Font -->
-		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
-		<!-- home slider-->
 		<link href="https://cdn.jsdelivr.net/npm/pgwslider@2.3.1/pgwslider.min.css" rel="stylesheet">
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/mihil%2Fstyle.css?alt=media&token=cc67361d-2293-43d8-b36b-9023f3e01707" rel="stylesheet" media="screen">	
-		<link href="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/mihil%2Fresponsive.css?alt=media&token=bb1294e2-717a-4a15-a2f2-b7bd3d7da061" rel="stylesheet" media="screen">		
-	</head>
-
-	<body>
-	
-		<section id="header_area">
-			<div class="wrapper header">
-				<div class="clearfix header_top">
-					<div class="clearfix logo floatleft">
-						<a href=""><h1><span>COP's</span> Blog</h1></a>
-					</div>
-					<div class="clearfix search floatright">
-						<form>
-							<input type="text" placeholder="Search"/>
-							<input type="submit" />
-						</form>
-					</div>
-				</div>
-				<div class="header_bottom">
-					<nav>
-						<ul id="nav" style="font-size:20px">
-							<li><a href="/">Home</a></li>
-							<li><a href="">Competitive Programming</a></li>
-							<li><a href="">Machine Learning</a></li>
-							<li><a href="">Development</a></li>
-							<li><a href="">Information Security</a></li>
-							<li><a href="">Cryptography</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</section>
+		<link href="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/mihil%2Fstyle.css?alt=media&token=cc67361d-2293-43d8-b36b-9023f3e01707" rel="stylesheet" media="screen">
+		<link href="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/mihil%2Fresponsive.css?alt=media&token=bb1294e2-717a-4a15-a2f2-b7bd3d7da061" rel="stylesheet" media="screen">
 		
 		<section id="content_area">
 			<div class="clearfix wrapper main_content_area">
 			
 				<div class="clearfix main_content floatleft">
-				
-					<div class="clearfix slider">
-						<ul class="pgwSlider">
-							<li><img src="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/mihil%2Fimages%2Fthumb%2Fmegamind_07.jpg?alt=media&token=d802a326-ba50-4a29-bf9a-7a61108d5932" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars" data-large-src="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/mihil%2Fimages%2Fthumb%2Fmegamind_07.jpg?alt=media&token=d802a326-ba50-4a29-bf9a-7a61108d5932"/></li>
-							<li><img src="images/thumbs/wall-e.jpg" alt="Montréal, QC, Canada" data-large-src="images/slides/wall-e.jpg" data-description="Eiffel Tower and Champ de Mars"/></li>
-							<li>
-								<img src="images/thumbs/up-official-trailer-fake.jpg" alt="Shanghai, China" data-large-src="images/slides/up-official-trailer-fake.jpg" data-description="Shanghai ,chaina">
-							</li>
-
-
-						</ul>
-					</div>
 					
 					<div class="clearfix content">
 						<div class="content_title"><h2>Latest Blog Post</h2></div>
@@ -92,19 +33,7 @@
 						</div>
 						{% endfor %}						
 					</div>
-					
-					<div class="pagination">
-						<nav>
-							<ul>
-								<li><a href=""> << </a></li>
-								<li><a href="">1</a></li>
-								<li><a href="">2</a></li>
-								<li><a href="">3</a></li>
-								<li><a href="">4</a></li>
-								<li><a href=""> >> </a></li>
-							</ul>
-						</nav>
-					</div>
+
 				</div>
 				<div class="clearfix sidebar_container floatright">
 						<div class="clearfix single_sidebar category_items">
@@ -117,19 +46,8 @@
 								<li class="cat-item"><a href="">Information Security</a>(12)</li>
 							</ul>
 						</div>
-						<div class="clearfix single_sidebar">
-							<h2>Recent Post</h2>
-							<ul>
-								<li><a href="">Competitive Programming<span>(1)</span></a></li>
-								<li><a href="">Machine Learning<span>(12)</span></a></li>
-								<li><a href="">Development<span>(12)</span></a></li>
-								<li><a href="">Cryptography<span>(12)</span></a></li>
-								<li><a href="">Information Security<span>(12)</span></a></li>
-							</ul>
-						</div>
 					</div>
 				</div>
-			</div>
 		</section>
 		
 		
@@ -160,12 +78,4 @@
 		</script>
 		<script type="text/javascript" src="js/placeholder_support_IE.js"></script>
 		
-<!--
----- Clean html template by http://WpFreeware.com
----- This is the main file (index.html).
----- You are allowed to change anything you like. Find out more Awesome Templates @ wpfreeware.com
----- Read License-readme.txt file to learn more.
--->	
-		
-	</body>
-</html>
+{% endblock %}

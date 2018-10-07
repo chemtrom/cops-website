@@ -19,7 +19,7 @@
 		<link href="https://cdn.jsdelivr.net/npm/pgwslider@2.3.1/pgwslider.min.css" rel="stylesheet">
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/mihil%2Fstyle.css?alt=media&token=871ef8f3-fcb2-406f-926d-2a495b41cd48" rel="stylesheet" media="screen">	
+		<link href="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/mihil%2Fstyle.css?alt=media&token=cc67361d-2293-43d8-b36b-9023f3e01707" rel="stylesheet" media="screen">	
 		<link href="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/mihil%2Fresponsive.css?alt=media&token=bb1294e2-717a-4a15-a2f2-b7bd3d7da061" rel="stylesheet" media="screen">		
 	</head>
 
@@ -40,15 +40,13 @@
 				</div>
 				<div class="header_bottom">
 					<nav>
-						<ul id="nav">
-							<li><a href="index.html">Home</a></li>
+						<ul id="nav" style="font-size:20px">
+							<li><a href="/">Home</a></li>
 							<li><a href="">Competitive Programming</a></li>
 							<li><a href="">Machine Learning</a></li>
 							<li><a href="">Development</a></li>
 							<li><a href="">Information Security</a></li>
 							<li><a href="">Cryptography</a></li>
-							<li><a href="">About us</a></li>
-							<li><a href="#contact_us">Contact us</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -62,7 +60,7 @@
 				
 					<div class="clearfix slider">
 						<ul class="pgwSlider">
-							<li><img src="images/thumbs/megamind_07.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars" data-large-src="images/slides/megamind_07.jpg"/></li>
+							<li><img src="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/mihil%2Fimages%2Fthumb%2Fmegamind_07.jpg?alt=media&token=d802a326-ba50-4a29-bf9a-7a61108d5932" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars" data-large-src="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/mihil%2Fimages%2Fthumb%2Fmegamind_07.jpg?alt=media&token=d802a326-ba50-4a29-bf9a-7a61108d5932"/></li>
 							<li><img src="images/thumbs/wall-e.jpg" alt="Montréal, QC, Canada" data-large-src="images/slides/wall-e.jpg" data-description="Eiffel Tower and Champ de Mars"/></li>
 							<li>
 								<img src="images/thumbs/up-official-trailer-fake.jpg" alt="Shanghai, China" data-large-src="images/slides/up-official-trailer-fake.jpg" data-description="Shanghai ,chaina">
@@ -78,18 +76,16 @@
 						<div class="clearfix single_content">
 							<div class="clearfix post_date floatleft">
 								<div class="date">
-									<h3>{{ post.0 }}</h3><!--date-->
-									<p>{{ post.1 }}</p><!-- month -->
+									<img src="{{post.3}}" style="height:100px;"><!-- month -->
 								</div>
 							</div>
 							<div class="clearfix post_detail">
-								<h2><a href="">{{ post.2 }}</a></h2><!-- title -->
+								<h1><a href="">{{ post.0 }}</a></h1><!-- title -->
 								<div class="clearfix post-meta">
-									<p><span><i class="fa fa-user"></i>{{ post.3 }}<!-- name--></span> <span><i class="fa fa-clock-o"></i>{{ post.0 }} {{ post.1 }}</span> <span><i class="fa fa-comment"></i></span> <span><i class="fa fa-folder"></i> {{ post.4 }}<!-- category--></span></p>
+									<p><span><i class="fa fa-user"></i>{{ post.1 }}<!-- name--></span> <span><i class="fa fa-clock-o"></i>{{ post.4}}</span>{% for i in post.2 %}<span>{{i}}</span>{% endfor %}</p>
 								</div>
-								<div class="clearfix post_excerpt">
-									<img src="images/thumb.png" alt=""/>
-									<p>{{ post.5 }}<!-- data --></p>
+								<div class="clearfix post_excerpt floatleft">
+									{{ post.6 }}<!-- data -->
 								</div>
 								<a href="/markdown/?id=posts/{{ post.5 }}" class="btn btn-primary">Read More</a>
 							</div>

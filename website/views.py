@@ -47,10 +47,10 @@ class PostsPageView(TemplateView):
         # Open the post.md file
         with open("posts/"+filename, "r") as f:
             content = f.read()
-
+        content1=content    
         i = content.find("---", 3)  # Get the ending ---, not the starting one
         content = content[4:i-2]       # Keep the header, remove everything else
-
+        content1 = content1[i+3:i+503]+"......"
         S = StringIO(content)
         mReader = reader(S, delimiter='\n')
         temp = []
@@ -68,7 +68,7 @@ class PostsPageView(TemplateView):
 
         # Add filename to temp. For later
         temp.append(filename)
-
+        temp.append(content1)
         posts.append(temp)
 
     template_name = "posts.html"
@@ -90,10 +90,8 @@ class ShowMD(TemplateView):
 
         i = content.find("---", 3)  # Get the ending ---, not the starting one
         content = content[i+3:]  # Remove the header from content
-
         md = markdown.Markdown(extensions=[GithubFlavoredMarkdownExtension()])
         html = md.convert(content)
-
         context['markdown_content'] = html
         return context
 

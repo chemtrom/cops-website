@@ -1,46 +1,6 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Timeline - Free Responsive Template</title>
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-
-        <link rel="stylesheet" type="text/css" href="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/bootstrap.min.css?alt=media&token=13c69f8e-23ae-4fad-8287-861f0d61a984">
-        <link rel="stylesheet" type="text/css" href="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/font-awesome.min.css?alt=media&token=ddcb4c2b-c6e5-4e65-85b0-6a78fec28da1">
-        <link rel="stylesheet" type="text/css" href="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/timeline%2Fcss%2Ftemplatemo-style.css?alt=media&token=e74bce49-aa73-49e3-9bbb-268b3d135511">
-
-        <!-- JavaScripts -->
-        <script src="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/jquery-1.10.2.min.js?alt=media&token=9899dadf-704b-4b19-bbce-14cc58179396"></script>
-        <script src="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/modernizr.min.js?alt=media&token=a75b66b4-fc75-4947-9dd7-2e59c9b78e49"></script>
-
-	</head>
-	<body>
-
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <div id="logo" class="pull-left">
-            <a href="/"><img src="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/logo.png?alt=media&token=8f365979-3c9e-4dc7-8ec1-a70e9d01eb4b" alt="" title=""/></a>
-        </div>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target=".navbar-collapse" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="/posts">Posts</a></li>
-                <li class="nav-item"><a class="nav-link" href="/team">Team</a></li>
-                <li class="nav-item"><a class="nav-link" href="/timeline">Timeline</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://github.com/cops-iitbhu?tab=repositories">Repositories</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+{% extends "base.html" %}
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/timeline%2Fcss%2Ftemplatemo-style.css?alt=media&token=e74bce49-aa73-49e3-9bbb-268b3d135511">
 
     <div id="cta">
         <div class="container">
@@ -137,10 +97,7 @@
         </div>
     </div>
 
-            <!-- Javascripts -->
-
-		<script type="text/javascript" src="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/bootstrap.min.js?alt=media&token=ba259738-151a-4ca7-88c8-177421d837bf"></script>
-		<script type="text/javascript" src="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/custom.js?alt=media&token=cef55bbe-5266-41c5-9938-6123fdeb0f3f"></script>
-
-	</body>
-</html>
+    <!-- Javascripts -->
+    <script type="text/javascript" src="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/modernizr.min.js?alt=media&token=a75b66b4-fc75-4947-9dd7-2e59c9b78e49"></script>
+    <script type="text/javascript" src="https://firebasestorage.googleapis.com/v0/b/cops-iitbhu.appspot.com/o/custom.js?alt=media&token=cef55bbe-5266-41c5-9938-6123fdeb0f3f"></script>
+{% endblock %}
